@@ -1,0 +1,123 @@
+#Nosotros{
+    height: fit-content;
+}
+
+
+
+.bio{
+    padding: 3%;
+    h2{
+        margin-bottom: 2%;
+    }
+}
+
+
+.references{
+    width: 100%;
+    padding-block: 10%;
+    height: fit-content;
+    background-color: var(--bg-light-blue);
+    h3{
+        color: #FFFFFF;
+        padding-bottom: 10%;    
+    }
+}
+
+.icons{
+    height: fit-content;
+}
+
+.bunge {
+    background-image: url(../assets/bunge.svg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 2rem;
+}
+.shipping {
+    background-image: url(../assets/LogoShippingServices-01.svg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 24rem;
+    height: 12rem;
+}
+.compumar {
+    background-image: url(../assets/compumar.svg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 2rem;
+}
+.aerolineas {
+    background-image: url(../assets/AR_horiz.svg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 7rem;
+}
+.panamerican {
+    background-image: url(../assets/logo-pan-american-energy-pae.svg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 5rem;
+}
+
+
+
+@media all and (max-height:450px){
+    hgroup{
+        height: fit-content;
+    }
+}
+
+@media all and (min-width: 750px) and (orientation:portrait){
+    #Nosotros{
+        height: 100vh;
+    }
+    .section-content{
+        height: 100%;
+    }
+    .bio{
+        width: 75%;
+    }
+    .references{
+        h3{
+            padding-bottom: 5%;
+        }
+    }
+
+    
+}
+
+
+
+@media all and (min-width: 900px) and (orientation: landscape){
+    #Nosotros{
+        height: 100vh;
+    }
+    .section-content{
+        height: 100%;
+    }
+    .references{
+        padding-block: 0%;
+        h3{
+            padding-bottom: 2.5%;
+        }
+    }
+   
+}
+
+@media all and (min-width: 1300px) and (orientation: landscape){   
+    .references{
+        padding-block: 3%;
+    }
+}
+
+@media all and  (min-width:1500px) and (orientation: landscape){
+    .bio{
+        width: 60%;
+    }
+    
+}
+

@@ -1,0 +1,13 @@
+import './css/preloader.css';
+import './css/style.css';
+import './css/nav.css';
+import './css/home.css';
+import './css/nosotros.css';
+import './css/servicios.css';
+import './css/contacto.css';
+import './css/footer.css';
+import './navigation.js';
+import './suscribe.js';
+import './preloader.js';
+import './animations/scrolling.js';
+import './animations/loadingAnimation.js';

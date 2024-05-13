@@ -1,0 +1,101 @@
+#footer{
+    height:fit-content;
+    padding-block: 5%;
+    background-color: var(--bg-dark-blue);
+    h3,p, a, button{
+        color: #FFFFFF;
+    }
+    span{
+        display: inline-block;
+        width:3rem;
+        aspect-ratio: 1/1;
+        margin-right: 2%;
+    }
+}
+.copy{
+    padding-top: 2%;
+}
+
+.footer{
+    width:100%;
+}
+.formulario , .redes-sociales{
+    width: 100%;
+    padding-block: 5%;
+    h3,p{
+        margin-bottom: 2%;
+    }
+}
+
+form{   
+    flex-wrap: wrap;
+    input {
+        border:none;
+        width: 100%;
+        height: 5rem;
+        margin-bottom: 2%;
+    }
+    button{
+        height: 5rem;
+    }
+    
+}
+
+
+.linkedin{
+    background-image: url(../assets/linkedin.svg);
+}
+.instagram{
+    background-image: url(../assets/ig.svg);
+}
+.facebook{
+    background-image: url(../assets/fb.svg);
+}
+
+@media all and (min-width: 600px) and (orientation: portrait){
+    form{
+        flex-wrap: nowrap;
+   }
+   .footer{
+    width:75%;
+   }
+
+}
+
+@media all and (min-width:750px) and ( orientation: portrait){
+    .footer{
+        width: 70%;
+    }
+}
+
+@media all and (min-width: 900px) and (orientation: landscape){
+    form{
+        input{
+            width: 60%;
+        }
+        button{
+            width:25%,
+        }
+    }
+    .footer{
+        width: 50%;
+    }
+    
+}
+
+@media all and (min-width:1300px) and (orientation: landscape){
+    .footer{
+        width: 45%;
+    }
+}
+
+@media all and  (min-width:1500px) and (orientation: landscape){
+    .footer{
+        width: 35%;
+    }
+    
+}
+
+
+
+
