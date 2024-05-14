@@ -34,7 +34,6 @@ window.addEventListener('load', showContent);
 // window.addEventListener('progress', function (event) {
 //   if (event.lengthComputable) {
 //     var percentage = Math.round((event.loaded * 100) / event.total);
-
 //     document.getElementById('loadingPercentage').innerText = percentage + '%';
 //   }
 // });
