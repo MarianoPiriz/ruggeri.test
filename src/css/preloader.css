@@ -12,11 +12,16 @@
     align-items: center;
   }
 
-  #lottieFile{
-    width: 300px;
-    height: 300px;
-    
+  #logo-preloader{
+    fill: #ffffff;
+    opacity: 1;
   }
+
+  #lottieFile{
+    width: 150px;
+    height: 100px; 
+  }
+
     
   #loadingPercentage {
     margin-top: 20px;

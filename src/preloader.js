@@ -1,26 +1,40 @@
-import * as lottie from 'lottie-web';
+import gsap from 'gsap';
+const layers = document.querySelectorAll('.layer');
 
-// Function to hide the preloader and show the content when the page is fully loaded
+const timer = setInterval(() => {
+  gsap.fromTo(
+    '.layer',
+    {
+      opacity: 0.1,
+    },
+    {
+      opacity: 1,
+      stagger: {
+        each: 0.5,
+        from: 0,
+      },
+    }
+  );
+}, 1500);
+
 function showContent() {
   setTimeout(() => {
     document.getElementById('preloader').style.display = 'none';
     document.getElementById('content').style.opacity = '1';
-  }, 2000);
+    clearInterval(timer);
+  }, 1500);
 }
+
+function Animation() {
+  console.log(layers);
+}
+
 window.addEventListener('load', showContent);
 
-window.addEventListener('progress', function (event) {
-  if (event.lengthComputable) {
-    var percentage = Math.round((event.loaded * 100) / event.total);
+// window.addEventListener('progress', function (event) {
+//   if (event.lengthComputable) {
+//     var percentage = Math.round((event.loaded * 100) / event.total);
 
-    document.getElementById('loadingPercentage').innerText = percentage + '%';
-  }
-});
-
-lottie.loadAnimation({
-  container: document.getElementById('lottieFile'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: './dataAnimation.json',
-});
+//     document.getElementById('loadingPercentage').innerText = percentage + '%';
+//   }
+// });
