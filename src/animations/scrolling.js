@@ -118,33 +118,37 @@ gsap.from('.cards', {
   },
 });
 
-gsap.from('.card', {
-  scale: 0,
-  opacity: 0,
-  ease: 'expoScale',
-  stagger: {
-    amount: 2,
-  },
-  scrollTrigger: {
-    trigger: '#Servicios',
-    scrub: 1,
-    start: 'top 30%',
-    end: 'top 5%',
-  },
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      gsap.fromTo(
+        '.card',
+        {
+          scale: 0,
+          opacity: 0,
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          ease: 'expoScale',
+          stagger: {
+            amount: 2,
+          },
+          scrollTrigger: {
+            trigger: '#Servicios',
+            scrub: 1,
+            start: 'top 30%',
+            end: 'top 5%',
+          },
+        }
+      );
+    }
+  });
 });
-gsap.to('.card', {
-  y: -200,
-  scale: 0,
-  opacity: 0,
-  ease: 'expoScale',
-  stagger: { each: 2 },
-  scrollTrigger: {
-    trigger: '#Contacto',
-    scrub: 1,
-    start: 'top 80%',
-    end: 'top 20%',
-  },
-});
+
+const cards = document.querySelector('.cards');
+
+observer.observe(cards);
 
 //////////////////////////////
 
