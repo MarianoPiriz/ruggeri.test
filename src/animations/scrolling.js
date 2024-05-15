@@ -132,27 +132,19 @@ gsap.from('.card', {
     end: 'top 5%',
   },
 });
-gsap.fromTo(
-  '.card',
-  {
-    scale: 1,
-    opacity: 1,
-    y: 0,
+gsap.to('.card', {
+  y: -200,
+  scale: 0,
+  opacity: 0,
+  ease: 'expoScale',
+  stagger: { each: 2 },
+  scrollTrigger: {
+    trigger: '#Contacto',
+    scrub: 1,
+    start: 'top 80%',
+    end: 'top 20%',
   },
-  {
-    y: -200,
-    scale: 0,
-    opacity: 0,
-    ease: 'expoScale',
-    stagger: { each: 2 },
-    scrollTrigger: {
-      trigger: '#Contacto',
-      scrub: 1,
-      start: 'top 80%',
-      end: 'top 20%',
-    },
-  }
-);
+});
 
 //////////////////////////////
 
