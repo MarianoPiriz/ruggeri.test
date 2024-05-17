@@ -152,7 +152,7 @@
 
 @media all and  (min-width:1190px) and (orientation: landscape){
     #Servicios{
-        height: 100vh;
+        
         hgroup{
             h2{
                 margin-top: 5%;
@@ -167,6 +167,9 @@
 }
 
 @media all and  (min-width:1500px) and (orientation: landscape){
+    #Servicios{
+        height: 100vh;
+    }
     .card{
         height: 600px;
     }
