@@ -13,6 +13,7 @@
 
 @media all and (min-width: 750px){
     .content-contacto{
+        margin-top: 5%;
         flex-wrap: nowrap;
     }
 }

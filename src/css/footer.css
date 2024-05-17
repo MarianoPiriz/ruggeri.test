@@ -84,6 +84,9 @@ form{
 }
 
 @media all and (min-width:1300px) and (orientation: landscape){
+    #footer{
+        padding-block: 0%;
+    }
     .footer{
         width: 45%;
     }
